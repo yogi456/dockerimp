@@ -1,0 +1,204 @@
+    1  docker ps
+    2  docker images
+    3  docker pull apache2:lates
+    4  docker pull apache2:latest
+    5  docker pull centos7
+    6  docker login
+    7  docker pull centos7
+    8  docker pull helloworld
+    9  docker pull hello-world
+   10  docker images
+   11  docker run -it hello-world --name cont1
+   12  docker run -it hello-world -name cont1
+   13  docker run -it hello-world
+   14  docker ps
+   15  docker ps -a
+   16  hello"         21 seconds ago   Exited (0) 21 seconds ago             gallant_mestorf
+   17  d17409fcccdb   hello-world   "-name cont1"    44 seconds ago   Created                               xenodochial_volhard
+   18  808bb600a71b   hello-world   "--name cont1"   55 seconds ago   Created  
+   19  docker pull docker push yogi456/webserver
+   20  docker pull yogi456/webserver
+   21  docker pull yogi456/webserver:v1
+   22  ls
+   23  docker run -it webserver:v1 
+   24  docker images
+   25  docker run -it yogi456/webserver:v1 
+   26  ls
+   27  docker ps
+   28  docker --h
+   29  docker log
+   30  docker ps
+   31  docker logs b8f0c15cada7
+   32  ls
+   33  cat /etc/os-release 
+   34  docker b8f0c15cada7
+   35  docker -h
+   36  docker attach b8f0c15cada7
+   37  docker ps
+   38  docker run -it yogi456/webserver:v1 
+   39  docker ps
+   40  docker -h
+   41  docker exec -h
+   42  docker exec "cat /etc/os-release" 69b346ffc2d6
+   43  docker exec -it  69b346ffc2d6 sh
+   44  docker exec -it  69b346ffc2d6 date
+   45  cat /etc/passwd
+   46  docker exec -it  69b346ffc2d6 sh
+   47  docker exec -it  69b346ffc2d6 cat /etc/os-release 
+   48  docker exec -it  69b346ffc2d6 cat /etc/os-release;date;cal
+   49  docker exec -it  69b346ffc2d6 sudo systemctl status httpd
+   50  docker exec -it  69b346ffc2d6 systemctl status httpd
+   51  docker exec -it  69b346ffc2d6 systemctl status /etc/httpd
+   52  docker ps 
+   53  kubectl 
+   54  kubectl get pods
+   55  kubernetes ---> YAML(Yet ANother Markup Language)
+   56  PODS
+   57  docker attache  69b346ffc2d6
+   58  docker attach  69b346ffc2d6
+   59  docker ps
+   60  ls
+   61  kubernetes ---> launch
+   62  docker run -it yogi456/webserver:v1 
+   63  docker inspect fde70e9288e3
+   64  Sudo 
+   65  ls
+   66  docker ps
+   67  docker images
+   68  docker pull centos:7
+   69  docker images
+   70  docker run -it --name mycont1 centos:7
+   71  docker ps 
+   72  docker ps -a
+   73  docker start mycont1
+   74  docker ps
+   75  docker attach mycont1
+   76  nano  myfile
+   77  gedit myfile 
+   78  docker attach mycont1
+   79  ifconfig 
+   80  rpm -q ifconfig
+   81  which ifconfig 
+   82  rpm -q ifconfig
+   83  rpm -q /usr/sbin/ifconfig
+   84  cd
+   85  cd /usr/sbin/
+   86  ls
+   87  ls 
+   88  ls | grep ifconfig
+   89  vim ifconfig 
+   90  sudo yum install ifconfig
+   91  rpm -q -f /usr/sbin/ifconfig 
+   92  ifconfig 
+   93  cd
+   94  docker attach mycont1
+   95  git
+   96  yum install git
+   97  git
+   98  cd /var/www/html
+   99  yum install httpd
+  100  systemctl status httpd
+  101  systemctl start httpd
+  102  ls
+  103  systemctl status httpd
+  104  cd /var/www/html/
+  105  ls
+  106  vim index.html
+  107  cd
+  108  cd -
+  109  ls
+  110   rm -rf index.html 
+  111  cd
+  112  git clone https://github.com/yogi456/myportfolio.git /var/www/html/
+  113  lss
+  114  cd -
+  115  ls
+  116  history 
+  117  Ansible
+  118  docker attach mycont1
+  119  systemctl status httpd
+  120  /usr/lib/systemd/system/httpd.service
+  121  /usr/lib/systemd/system/httpd
+  122  /usr/lib/systemd/system/httpd.service
+  123  sudo /usr/lib/systemd/system/httpd.service
+  124  docker attach mycont1
+  125  cd
+  126  cd  /var/run/httpd/
+  127  ls
+  128  cd
+  129  rm -rf /var/run/httpd/*
+  130  /usr/lib/systemd/system/httpd.service
+  131  /usr/sbin/httpd
+  132  systemctl status httpd
+  133  systemctl stop httpd
+  134  /usr/sbin/httpd
+  135  systemctl status httpd
+  136  /usr/sbin/httpd
+  137  kill 25452
+  138  /usr/sbin/httpd
+  139  systemctl status httpd
+  140  /usr/lib/systemd/system/httpd.service
+  141  /usr/sbin/httpd -DFOREGROUND
+  142  kill 25509
+  143  /usr/sbin/httpd -DFOREGROUND
+  144  systemctl status httpd
+  145  docker attach mycont1
+  146  docker -h
+  147  docker ps
+  148  docker commit mycont1 myweb:v1
+  149  docker images
+  150  docker push myweb
+  151  docker tag myweb:v1 yogi456/myweb:v1
+  152  docker images
+  153  docker push yogi456/myweb:v1
+  154  history 
+  155  docker ps
+  156  docker run -it  --name mywebcont yogi456/myweb -p 8080:80
+  157  docker run -it  --name mywebcont yogi456/myweb:v1 -p 8080:80
+  158  netstat -tnlp 
+  159  docker run -it  --name mywebcont -p 80:80 yogi456/myweb:v1
+  160  docker ps
+  161  docker ps -a
+  162  docker ps
+  163  docker attach mywebcont
+  164  docker start mywebcont
+  165  docker run -it  --name myweb1 -p 80:80 yogi456/myweb:v1
+  166  history 
+  167  docker ps
+  168  0.0.0.0:80->80/tcp, :::80->80/tcp   myweb1
+  169  docker ps 
+  170  docker attach myweb1
+  171  curl 172.17.0.4:80
+  172  docker attach myweb1
+  173  curl 172.17.0.4:80
+  174  docker attach myweb1
+  175  systemctl status httpd
+  176  systemctl start httpd
+  177  systemctl status httpd
+  178  docker attach myweb1
+  179  systemctl start httpd
+  180  vim /root/.bashrc
+  181  docker run -it  --name myweb2 -p 8080:80 yogi456/myweb:v1
+  182  docker attach myweb2
+  183  docker start myweb2
+  184  docker attach myweb2
+  185  docker commit myweb2 testing:v1
+  186  docker images
+  187  docker run -it --name test1 testing:v1
+  188  ls
+  189  docker info
+  190  docker inspect myweb2
+  191  docker run myweb2 ifconfig
+  192  docker exec myweb2 ifconfig
+  193  docker inspect myweb2
+  194  docker inspect --format "{Id}"
+  195  docker inspect --format "{{Id}}"
+  196  docker inspect --format "{{.Id}}"
+  197  docker inspect --format "{{Id}}" myweb2 
+  198  docker inspect --format "{{.Id}}" myweb2 
+  199  docker inspect --format "{{.NetworkSettings.IPAddress}}" myweb2 
+  200  docker inspect --format "{{.NetworkSettings.IPAddress}}" myweb1
+  201  docker inspect --format "{{.NetworkSettings.IPAddress}}" mycont1
+  202  history 
+  203  history > docker_imp file
+  204  history > docker_impfile
